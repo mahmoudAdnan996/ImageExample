@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fd4b4b"
+    tools:context="com.example.mahmoudadnan.imageexample.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Image"
+        android:layout_above="@+id/image"
+        android:textAllCaps="false"
+        android:layout_marginLeft="90dp"
+        android:onClick="Capture"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Image"
+        android:layout_toRightOf="@id/take"
+        android:layout_above="@+id/image"
+        android:textAllCaps="false"
+        android:onClick="PickImage"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
